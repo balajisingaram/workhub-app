@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, Suspense } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import Navbar from '@/components/layout/Navbar'
@@ -9,7 +9,7 @@ import { cn, getWeightTierInfo } from '@/lib/utils'
 
 type Tab = 'all' | 'freelancers' | 'workers' | 'jobs'
 
-export default function SearchPage() {
+function SearchContent() {
   const params = useSearchParams()
   const [query, setQuery] = useState(params?.get('q') ?? '')
   const [tab, setTab] = useState<Tab>('all')
@@ -194,5 +194,13 @@ export default function SearchPage() {
       </main>
       <Footer />
     </>
+  )
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#f5f3ee] flex items-center justify-center"><div className="text-[#7a756c]">Loading...</div></div>}>
+      <SearchContent />
+    </Suspense>
   )
 }
