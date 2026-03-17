@@ -15,7 +15,7 @@ const FLOWS = [
       { n:2, icon:'📨', title:'Receive proposals',  desc:'Verified workers apply to your job. Browse their profiles, ratings, portfolio and past reviews. Chat before you commit.' },
       { n:3, icon:'🎥', title:'Interview (optional)',desc:'Book a free Zoom or Google Meet interview directly through GigHub. Schedule at a time that works for you.' },
       { n:4, icon:'🔒', title:'Hire & pay securely',desc:'Accept a proposal. Your payment is authorized but not charged yet — held safely in escrow until you approve the work.' },
-      { n:5, icon:'✅', title:'Approve & release',  desc:'Review the delivered work. If you're happy, approve it — funds are instantly released to the worker. Not happy? Raise a dispute.' },
+      { n:5, icon:'✅', title:'Approve & release',  desc:"Review the delivered work. If you're happy, approve it — funds are instantly released to the worker. Not happy? Raise a dispute." },
       { n:6, icon:'⭐', title:'Leave a review',      desc:'Rate your experience. Your review helps other clients and builds the worker\'s reputation on the platform.' },
     ],
   },
