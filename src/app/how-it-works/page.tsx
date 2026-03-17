@@ -42,7 +42,7 @@ const FLOWS = [
     title: 'Finding onsite gig work',
     steps: [
       { n:1, icon:'📋', title:'Register & pick tier', desc:'Choose your weight capacity tier (Light, Medium, Heavy or Extreme). Upload your ID for admin verification.' },
-      { n:2, icon:'📍', title:'Set your radius',       desc:'Set how far you're willing to travel. Set your available days and hours. Your location is used for GPS matching — not shown publicly.' },
+      { n:2, icon:'📍', title:'Set your radius',       desc:"Set how far you're willing to travel. Set your available days and hours. Your location is used for GPS matching — not shown publicly."
       { n:3, icon:'📲', title:'Receive job alerts',    desc:'Get notified when nearby jobs match your tier and availability. First come first served for urgent jobs.' },
       { n:4, icon:'📞', title:'Contact details revealed',desc:'Once a client pays the booking deposit, your contact details are revealed to them (and vice versa).' },
       { n:5, icon:'📍', title:'GPS check-in on arrival',desc:'When you arrive at the job site, check in via GPS or QR code scan. This confirms your arrival to the client.' },
